@@ -1,11 +1,42 @@
+
+@keyframes color-change {
+    0% {
+        color: #9900ff 
+    }
+    50% {
+        color: rgb(104, 191, 248)
+    }
+    100% {
+        color: #9900ff 
+    }
+
+}
+
+@keyframes color-changie {
+    0% {
+        color: #157abd 
+    }
+    30% {
+        color: rgb(126, 71, 228)
+    }
+    70% {
+        color: #157abd
+        
+    }
+    100% {
+        color: rgb(126, 71, 228)
+    }
+}
+
 body {
     font-family: Arial,  sans-serif; /* Familia de fuentes */
     font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
     background-color: #f0f0f0; /* El color del fondo de la página web */
     color: #333333; /* El color del texto*/ 
 }
-h1 {
-    color:  #5988FF /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+h1:hover {
+    animation: color-change 8s infinite;
+}
+h2:hover {
+    animation: color-changie 8s infinite;
 }
